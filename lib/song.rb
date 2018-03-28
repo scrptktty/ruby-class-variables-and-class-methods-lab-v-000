@@ -39,6 +39,11 @@ class Song
   end
 
  def self.artist_count
+   @@artists.reduce({}) do |acc, artist|
+     acc[artist] ||= 0
+     # genre_count_hash[genre] = genre_count_hash[genre] + 1
+     acc[artist] += 1
+     acc
  end
 
 end
