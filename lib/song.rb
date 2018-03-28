@@ -21,15 +21,15 @@ class Song
  end
 
  def self.artists
-   @@artists
+   @@artists.uniqu
  end
 
  def self.genres
-   @@genres
+   @@genres.uniq
  end
 
  def self.genre_count
-
+   @@
  end
 
  def self.artist_count
