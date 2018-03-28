@@ -29,7 +29,7 @@ class Song
  end
 
  def self.genre_count
-  
+  @@genres.reduce({}) { |genre_count_hash, genre|  }
  end
 
  def self.artist_count
