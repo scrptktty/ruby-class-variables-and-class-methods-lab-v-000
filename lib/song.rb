@@ -32,7 +32,8 @@ class Song
   @@genres.reduce({}) do |genre_count_hash, genre|
     genre_count_hash[genre] ||= 0
     # genre_count_hash[genre] = genre_count_hash[genre] + 1
-    genre_count_hash[genre] += 1
+    # genre_count_hash[genre] += 1
+    genre_count_hash[genre] ++
 
   end
   # array.reduce(initial_val) { |previous_val, x | code }
